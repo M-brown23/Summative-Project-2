@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Haerenga</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+
+  <div class="home">
+
+    <div class="container">
+      <div class="logo">
+        <img src="../Summative-b/Img/TNZ_logo.png" alt="" width="130" />
+      </div>
+      <nav class="navlist">
+        <ul class='ul'>
+          <li class="list">What is Project Haerenga?</li>
+          <li class="list">FAQ</li>
+          <li class="list">Contact</li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="booking" class="section">
+      <div class="section-center">
+        <div class="container">
+          <div class="row">
+            <div class="booking-form">
+              <div class="form-header">
+                <h1>Make your reservation</h1>
+              </div>
+              <form>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select id="people" class="form-control" required>
+                        <option  value="option" selected hidden>Accomadation</option>
+                        <option> Hotel </option>
+                        <option> Hostel </option>
+                        <option> Motel </option>
+                        <option> House </option>
+                      </select>
+                      <span class="select-arrow"></span>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select id="nights" class="form-control" required>
+                        <option value="nights" selected hidden>Nights</option>
+                        <option>1-5</option>
+                        <option>1-10</option>
+                        <option>3-10</option>
+                        <option>2-15</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Adults</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select  class="form-control" required>
+                        <option value="" selected hidden>Location</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="select-arrow"></span>
+                      <span class="form-label">Children</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="form-btn">
+                  <button id="button"class="submit-btn">Book Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+  <div class="info">
+
+    <div id="leftColumn" class="row-2">
+      <div class="column left" style="">
+        <div id="left" class="wrapper">
+          <h1>Ohakune</h1>
+          <div class="image i1"></div>
+          <div class="details">
+            <h2>Powderhorn Chateau</h2>
+            <p>3 Days - 2 Nights</p>
+            <button class="button"data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="column right" style="">
+        <div class="wrapper">
+          <h1>Taumarunui</h1>
+          <div class="image i2"></div>
+          <div class="details">
+
+            <h2>Forgotten World</h2>
+            <p>3 Days - 2 Nights</p>
+            <button class="button"data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="column right" style="">
+        <div id="third" class="wrapper">
+          <h1>Piopio</h1>
+          <div class="image i3"></div>
+          <div class="details">
+
+            <h2>Owls Nest</h2>
+            <p>3 Days - 2 Nights</p>
+            <button class="button"data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column right" style="">
+        <div class="wrapper">
+          <h1>Te Kuiti</h1>
+          <div class="image i4"></div>
+          <div class="details">
+
+            <h2>Ranger's Inn</h2>
+            <p>3 Days - 2 Nights</p>
+            <button class="button"data-toggle="modal" data-target="#myModal">Book Now</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="video">
+        <!-- The video -->
+        <video id="myVideo" style=" margin: 25px; width:96.8%;" controls>
+          <source src="../Summative-b/Img/The Champion - 2020 BYU Football Hype Video.mp4" type="video/mp4">
+        </video>
+
+        <footer>
+          <div class="column-2">
+            <a class="footer_title">Project Haerenga</a>
+            <a class="paragraph">Tourism New Zealand is the marketing agency responsible for promoting New Zealand as a
+              tourism destination internationally. It is the trading name of the New Zealand Tourism Board, a Crown
+              entity established under the New Zealand Tourism Board Act 1991 and is launching a new project titled
+              “Project Haerenga”. A project to advertise the smaller unpopular regions in New Zealand. </a>
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="column-2">
+            <a class="footer_title">OTHER LINKS</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Ticket</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="column-2">
+            <a class="footer_title">SHORTCUT</a>
+            <a href="">Our Services</a>
+            <a href="">Our Blog</a>
+            <a href="">Our Projects</a>
+            <a href="">About Us</a>
+          </div>
+          <div class="column-2">
+            <a class="footer_title">LATEST NEWS</a>
+            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,trees"></a>
+            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,tree"></a>
+            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,plant"></a>
+            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,forest"></a>
+            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,afforestation"></a>
+          </div>
+          <div class="column-2">
+            <a class="footer_title">GET IN TOUCH</a>
+            <a title="Address"><i class="fa fa-map-marker"></i> 007, Queen st., Auckland, New Zealand - 2496</a>
+            <a href="emailto:" title="Email"><i class="fa fa-envelope"></i> NzHaerenga@NZtourism.co.nz</a>
+            <a href="tel:" title="Contact"><i class="fa fa-phone"></i> +(09)-7869-20105</a>
+          </div>
+
+          <div class="sub-footer">
+            © CopyRights 2021 New Zealand Tourism Agency || All rights reserved
+          </div>
+        </footer>
+
+      </div>
+
+
+
+
+
+  <script src="../Summative-b/js/custom.js"></script>
+</body>
+</html>
