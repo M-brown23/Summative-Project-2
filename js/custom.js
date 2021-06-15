@@ -1,4 +1,4 @@
-// All custom.js
+// All custom.js...
 (function() {
   'use strict';
 
@@ -17,17 +17,17 @@
 
     console.log('working');
 
-    if (getNumberPeople.value === 'House' + getNumberNights.value === > 3)  {
+    if (getNumberPeople.value === 'House' + getNumberNights.value >= 15)  {
       console.log('People');
       document.getElementById("left").style.display = "block";
       document.getElementById("left").style.display = "none";
-    };
+    }
 
     if (getNumberPeople.value === 'Hotel')  {
       console.log('People');
       document.getElementById("third").style.display = "block";
       document.getElementById("third").style.display = "none";
-    };
+    }
 
   };
   // onclick ENDS
