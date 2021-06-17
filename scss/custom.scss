@@ -7,7 +7,7 @@ body {
   background-image: url("../img/3370913.jpeg");
   height: 1000px;
   width: 100%;
-  background-color: #2b2b2b; }
+   }
 
 * {
   transition: all 0.3s ease-in-out; }
@@ -47,8 +47,11 @@ ul li:hover {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-#booking {
-  font-family: 'Raleway', sans-serif; }
+.header{
+
+color: #FAF9F6;
+
+}
 
 .booking-form {
   position: relative;
@@ -208,7 +211,22 @@ ul li:hover {
   bottom: 15px; }
 
 .info {
-  background-image: url("../img/thumb-1920-541526.jpeg"); }
+  background-image: url("../img/thumb-1920-541526.jpeg");
+  max-height:1080px;
+
+}
+
+.container-2{
+
+max-height: 2000px;
+
+}
+
+.row-2{
+
+height: 1500px;
+
+}
 
 .form {
   height: 1440px;
@@ -238,7 +256,9 @@ ul li:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 40px; }
+  border-radius: 40px;
+  margin-top: 20px;
+ }
 
 .button:hover {
   background-color: #5555;
@@ -278,7 +298,7 @@ body {
 
 .wrapper {
   width: 100%;
-  height: 100%;
+  height: 130%;
   min-width: 300px;
   background-color: #2b2b2b;
   box-sizing: border-box;
@@ -286,8 +306,7 @@ body {
   text-align: center; }
 
 .wrapper > h1 {
-  padding: 10px;
-  font-family: "helvetica", sans-serif;
+  padding: 20px
   font-weight: 200;
   font-size: 1.9em;
   letter-spacing: .15em;
@@ -306,8 +325,8 @@ body {
   transform: translate(0px, -2px) scale(1.01); }
 
 .details > h1 {
-  font-family: "Playfair Display";
-  font-size: 1em;
+
+  font-size: 5px;
   color: #FAF9F6; }
 
 .details > h2 {
@@ -319,7 +338,7 @@ body {
   padding-top: 15px; }
 
 .details > p {
-  font-family: sans-serif;
+
   font-size: 1em;
   font-weight: 200;
   color: #FAF9F6; }
@@ -350,6 +369,13 @@ body {
 
 .i4 {background-image: url("../img/i-site-building.jpeg");}
 /* hotel card ends */
+
+.video{
+
+width: 100%;
+
+}
+
 
 /* FOOTER SECTIONS BEGINS */
 footer {
@@ -428,9 +454,53 @@ footer .column-2:nth-child(1) a:nth-child(3), footer .column-2:nth-child(1) a:nt
   height: 28px;
   font-size: 1.3em; }
 
-  
+  /* Dropdown Button */
+.dropbtn {
+  background-color: #2b2b2b;
+  color: #FAF9F6;
+
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FAF9F6;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #2b2b2b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #5555;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #5555;}
 
 /* FOOTER SECTION ENDS  */
+
+
+
+
 /* media querys */
 @media screen and (max-width: 1000px) {
   .wrapper {

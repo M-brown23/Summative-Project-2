@@ -41,7 +41,8 @@
           <div class="row">
             <div class="booking-form">
               <div class="form-header">
-                <h1>Make your reservation</h1>
+                <h1>Welcome to Project Haerenga</h1>
+                <h3 style="color: #FAF9F6; " class="header">Make your reservation</h3>
               </div>
               <form>
 
@@ -100,7 +101,7 @@
 
                 </div>
                 <div class="form-btn">
-        <button id="button" class="submit-btn"> <a class="link" href="#first">  Book Now</button></a>
+                  <button id="button" class="submit-btn"> <a class="link" href="#first"> Book Now</button></a>
                 </div>
               </form>
             </div>
@@ -110,7 +111,7 @@
     </div>
   </div>
 
-  <br>
+
 
   <div class="info">
 
@@ -124,7 +125,14 @@
             <p>3 Days - 2 Nights</p>
             <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
           </div>
-
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="https://www.powderhorn.co.nz/restaurant-and-bar/the-matterhorn-grill-bar/">Lunch 11.00</a>
+              <a href="https://www.powderhorn.co.nz/restaurant-and-bar/the-matterhorn-grill-bar/">Dinner 14.00</a>
+              <a href="https://www.powderhorn.co.nz/restaurant-and-bar/the-matterhorn-grill-bar/">Desert 10.00</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column right" style="">
@@ -132,12 +140,18 @@
           <h1>Taumarunui</h1>
           <div class="image i2"></div>
           <div class="details">
-
             <h2>Forgotten World</h2>
             <p>3 Days - 2 Nights</p>
             <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
           </div>
-
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="https://forgottenworldmotel.co.nz/facilities">Breakfast 8.50</a>
+              <a href="https://forgottenworldmotel.co.nz/facilities">Lunch 11.99</a>
+              <a href="https://forgottenworldmotel.co.nz/facilities">Dinner 15.00</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column right" style="">
@@ -145,15 +159,18 @@
           <h1>Piopio</h1>
           <div class="image i3"></div>
           <div class="details">
-
             <h2>Owls Nest</h2>
             <p>3 Days - 2 Nights</p>
-
-
-
             <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
           </div>
-
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href=" https://theowlsnest.co.nz/fat-pigeon/#single/0">Breakfast 10.00</a>
+              <a href=" https://theowlsnest.co.nz/fat-pigeon/#single/0">Lunch 14.00</a>
+              <a href=" https://theowlsnest.co.nz/fat-pigeon/#single/0">Dinner 15.00</a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -162,17 +179,20 @@
           <h1>Te Kuiti</h1>
           <div class="image i4"></div>
           <div class="details">
-
             <h2>Ranger's Inn</h2>
             <p>3 Days - 2 Nights</p>
             <button class="button" data-toggle="modal" data-target="#myModal">Book Now</button>
           </div>
-
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="https://www.moteltekuiti.co.nz/accommodation-te-kuiti.html">Breakfast 11.90</a>
+              <a href="https://www.moteltekuiti.co.nz/accommodation-te-kuiti.html">Lunch 15.90</a>
+              <a href="https://www.moteltekuiti.co.nz/accommodation-te-kuiti.html">Dinner 20.00</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="container">
-
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
           <div class="modal-dialog">
@@ -180,80 +200,109 @@
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                <div class="padding">
+                  <div class="row">
+                    <div class="container-fluid d-flex justify-content-center">
+                      <div class="">
+                        <div class="card">
+                          <div class="card-header">
+                            <div class="row">
+                              <div class="col"> <span>CREDIT/DEBIT CARD PAYMENT</span> </div>
+                              <div class="col"> <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> </div>
+                            </div>
+                          </div>
+                          <div class="card-body" style="">
+                            <div class="row">
+                              <div class="form-group"> <label for="cc-number" class="control-label">CARD NUMBER</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="cc-number" placeholder="•••• •••• •••• ••••"
+                                  required> </div>
+                              <div class="">
+                                <div class="form-group"> <label for="cc-exp" class="control-label">CARD EXPIRY</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="cc-exp" placeholder="•• / ••" required> </div>
+                              </div>
+                              <div class="card-body">
+                                <div class="form-group"> <label for="cc-cvc" class="control-label">CARD CVC</label> <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="••••" required> </div>
+                              </div>
+                              <div class="form-group"> <label for="cc-cvc" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control cc cvc"> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
+     </div>
 
+</div>
+
+<div class="container-2">
+
+        <div class="video">
+          <!-- The video -->
+          <video id="myVideo" style=" margin: 25px; width:96.8%; margin-top:200px;" controls>
+            <source src="../img/yt1s.com - 100 Pure New Zealand  A Welcoming Journey.mp4" type="video/mp4">
+          </video>
+
+          <footer>
+            <div class="column-2">
+              <a class="footer_title">Project Haerenga</a>
+              <a class="paragraph">Tourism New Zealand is the marketing agency responsible for promoting New Zealand as a
+                tourism destination internationally. It is the trading name of the New Zealand Tourism Board, a Crown
+                entity established under the New Zealand Tourism Board Act 1991 and is launching a new project titled
+                “Project Haerenga”. A project to advertise the smaller unpopular regions in New Zealand. </a>
+              <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="column-2">
+              <a class="footer_title">OTHER LINKS</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Ticket</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <div class="column-2">
+              <a class="footer_title">SHORTCUT</a>
+              <a href="">Our Services</a>
+              <a href="">Our Blog</a>
+              <a href="">Our Projects</a>
+              <a href="">About Us</a>
+            </div>
+            <div class="column-2">
+              <a class="footer_title">LATEST NEWS</a>
+              <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,trees"></a>
+              <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,tree"></a>
+              <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,plant"></a>
+              <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,forest"></a>
+              <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,afforestation"></a>
+            </div>
+            <div class="column-2">
+              <a class="footer_title">GET IN TOUCH</a>
+              <a title="Address"><i class="fa fa-map-marker"></i> 007, Queen st., Auckland, New Zealand - 2496</a>
+              <a href="emailto:" title="Email"><i class="fa fa-envelope"></i> NzHaerenga@NZtourism.co.nz</a>
+              <a href="tel:" title="Contact"><i class="fa fa-phone"></i> +(09)-7869-20105</a>
+            </div>
+
+            <div class="sub-footer">
+              © CopyRights 2021 New Zealand Tourism Agency || All rights reserved
+            </div>
+          </footer>
+
+        </div>
       </div>
 
-      <div class="video">
-        <!-- The video -->
-        <video id="myVideo" style=" margin: 25px; width:96.8%;" controls>
-          <source src="../img/The Champion - 2020 BYU Football Hype Video.mp4" type="video/mp4">
-        </video>
-
-        <footer>
-          <div class="column-2">
-            <a class="footer_title">Project Haerenga</a>
-            <a class="paragraph">Tourism New Zealand is the marketing agency responsible for promoting New Zealand as a
-              tourism destination internationally. It is the trading name of the New Zealand Tourism Board, a Crown
-              entity established under the New Zealand Tourism Board Act 1991 and is launching a new project titled
-              “Project Haerenga”. A project to advertise the smaller unpopular regions in New Zealand. </a>
-            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-          </div>
-          <div class="column-2">
-            <a class="footer_title">OTHER LINKS</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Ticket</a>
-            <a href="#">Contact Us</a>
-          </div>
-          <div class="column-2">
-            <a class="footer_title">SHORTCUT</a>
-            <a href="">Our Services</a>
-            <a href="">Our Blog</a>
-            <a href="">Our Projects</a>
-            <a href="">About Us</a>
-          </div>
-          <div class="column-2">
-            <a class="footer_title">LATEST NEWS</a>
-            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,trees"></a>
-            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,tree"></a>
-            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,plant"></a>
-            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,forest"></a>
-            <a href="" title="Lorem ipsum dolor sit amet"><img src="https://source.unsplash.com/50x50/?green,afforestation"></a>
-          </div>
-          <div class="column-2">
-            <a class="footer_title">GET IN TOUCH</a>
-            <a title="Address"><i class="fa fa-map-marker"></i> 007, Queen st., Auckland, New Zealand - 2496</a>
-            <a href="emailto:" title="Email"><i class="fa fa-envelope"></i> NzHaerenga@NZtourism.co.nz</a>
-            <a href="tel:" title="Contact"><i class="fa fa-phone"></i> +(09)-7869-20105</a>
-          </div>
-
-          <div class="sub-footer">
-            © CopyRights 2021 New Zealand Tourism Agency || All rights reserved
-          </div>
-        </footer>
-
-      </div>
 
 
 
 
-
-      <script src="../js/custom.js"></script>
+<script src="../js/custom.js"></script>
 </body>
 
 </html>
