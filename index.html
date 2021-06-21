@@ -27,9 +27,9 @@
       </div>
       <nav class="navlist">
         <ul class='ul'>
-          <li class="list">What is Project Haerenga?</li>
-          <li class="list">FAQ</li>
-          <li class="list">Contact</li>
+          <li class="list"><a href="#footer">What is Project Haerenga?</li></a>
+          <li class="list"><a href="#footer">FAQ</li></a>
+          <li class="list"><a href="#footer">Contact</li></a>
         </ul>
       </nav>
     </div>
@@ -37,7 +37,7 @@
 
     <div id="booking" class="section">
       <div class="section-center">
-        <div class="container">
+        <div class="container-3">
           <div class="row">
             <div class="booking-form">
               <div class="form-header">
@@ -86,14 +86,12 @@
                   </div>
                   <div class="col-md-4">
                     <div class="form-group">
-                      <select class="form-control" required>
-                        <option value="" selected hidden>Location</option>
-                        <option>0</option>
+                      <select id="location" class="form-control" required>
+                        <option selected hidden>Location</option>
                         <option>1</option>
                         <option>2</option>
                       </select>
                       <span class="select-arrow"></span>
-                      <span class="form-label">Children</span>
                     </div>
                   </div>
                 </div>
@@ -205,7 +203,13 @@
                 <div class="padding">
                   <div class="row">
                     <div class="container-fluid d-flex justify-content-center">
-                      <div class="">
+
+                      <h1>Total:<span id="amountTotal"><span></h1>
+
+
+
+
+                      <!-- <div class="">
                         <div class="card">
                           <div class="card-header">
                             <div class="row">
@@ -226,7 +230,7 @@
                               <div class="form-group"> <label for="cc-cvc" class="control-label">CARD HOLDER NAME</label> <input type="text" class="input-lg form-control cc cvc"> </div>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>
@@ -246,12 +250,12 @@
 
         <div class="video">
           <!-- The video -->
-          <video id="myVideo" style=" margin: 25px; width:96.8%; margin-top:200px;" controls>
+          <video id="myVideo" style=" margin: 25px; width:96.8%; margin-top:40px;" controls>
             <source src="../img/yt1s.com - 100 Pure New Zealand  A Welcoming Journey.mp4" type="video/mp4">
           </video>
 
           <footer>
-            <div class="column-2">
+            <div id="footer" class="column-2">
               <a class="footer_title">Project Haerenga</a>
               <a class="paragraph">Tourism New Zealand is the marketing agency responsible for promoting New Zealand as a
                 tourism destination internationally. It is the trading name of the New Zealand Tourism Board, a Crown

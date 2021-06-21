@@ -19,7 +19,7 @@ body {
 
 .home {
   background-image: url(../img/3370913.jpeg);
-  height: 1000px;
+  height: 1100px;
   width: 100%;
   background-color: #2b2b2b
 }
@@ -30,8 +30,6 @@ body {
 
 .container-2 {
   clear: both;
-
-  height: 1500px;
 }
 
 nav {
@@ -70,9 +68,6 @@ ul li:hover {
   transform: translateY(-50%)
 }
 
-#booking {
-  font-family: Raleway, sans-serif
-}
 
 .booking-form {
   position: relative;
@@ -263,6 +258,7 @@ ul li:hover {
 
 .info {
   background-image: url(../img/thumb-1920-541526.jpeg);
+  height: 700px;
 }
 
 .form {
@@ -335,16 +331,13 @@ body {
 
 .wrapper>h1 {
   padding: 20px;
-  font-weight: 200;
-  font-size: 1.9em;
-  letter-spacing: .15em
+  letter-spacing: .10em
 }
 
 .details {
   width: 95%;
   margin: 20px auto 2em;
   padding-top: 8.5em;
-
 }
 
 .wrapper:hover {
@@ -353,20 +346,17 @@ body {
 }
 
 .details>h1 {
-  font-size: 2em
+  font-size: 1em
 }
 
 .details>h2 {
-  font-family: sans-serif;
 
-  font-weight: 200;
-  letter-spacing: .1em;
-  padding-top: 15px
+  padding-top: 15px;
 }
 
 .details>p {
   font-size: 1em;
-  font-weight: 200
+  font-weight: 200px;
 }
 
 .image {
