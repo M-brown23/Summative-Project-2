@@ -179,30 +179,35 @@
     // System.out.println(total); // Print the sum of x + y
     console.log(typeof houseSum);
 
-  // var total = document.getElementById("total").textContent;
-  // document.getElementById("total") = houseSum;
-
-  // var str = document.getElementById("total").innerHTML;
-  // var res = str.replace("0", houseSum);
-  // document.getElementById("total").innerHTML = res;
 
   document.getElementById("housetotal").textContent =  '$' + houseSum;
   document.getElementById("hoteltotal").textContent =  '$' + hotelSum;
   document.getElementById("moteltotal").textContent =  '$' + motelSum;
   document.getElementById("hosteltotal").textContent = '$' + hostelSum;
 
+  // Displays total price
+
   document.getElementById("housenights").textContent = getNumberNights + ' nights selected ';
   document.getElementById("hotelnights").textContent = getNumberNights + ' nights selected ';
   document.getElementById("motelnights").textContent = getNumberNights + ' nights selected ';
   document.getElementById("hostelnights").textContent = getNumberNights + ' nights selected';
 
-  document.getElementById("hostelpernights").textContent = '$ ' + obj.hostel.price + ' per night'
-  document.getElementById("motelpernights").textContent = '$ ' + obj.motel.price + ' per night'
-  document.getElementById("hotelpernights").textContent = '$ ' + obj.hotel.price + ' per night'
-  document.getElementById("housepernights").textContent = '$ ' + obj.house.price + ' per night'
+  // Tells user total nights selected
+
+  document.getElementById("hostelpernights").textContent = '$' + obj.hostel.price + ' per night'
+  document.getElementById("motelpernights").textContent = '$' + obj.motel.price + ' per night'
+  document.getElementById("hotelpernights").textContent = '$' + obj.hotel.price + ' per night'
+  document.getElementById("housepernights").textContent = '$' + obj.house.price + ' per night'
+
+  // Displays the cost per night
+
+
 
   };
   // onclick ENDS
+
+
+
 
 
   // Items Magic [Preview-1]
