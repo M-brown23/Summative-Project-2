@@ -16,10 +16,7 @@
       price: 157,
       minNight: 1,
       maxNight: 5,
-      menu: 'Hash Browns & Coffee',
-      menuStacked: {
-        coffee: 'something..'
-      }
+
     },
 
     hostel: {
@@ -50,7 +47,7 @@
       maxNight: 15,
 
     }
-  }
+  };
 
   console.log(typeof obj.hotel.maxPpl);
 
@@ -62,7 +59,7 @@
 
     var getNumberPeople = document.getElementById('people');
     var getNumberNights = parseInt(document.getElementById('nights').value);
-    var getLocation = document.getElementById('location')
+    var getLocation = document.getElementById('location');
 
     var getFirst = document.getElementById('first');
     var getSecondOption = document.getElementById('second');
@@ -71,7 +68,7 @@
 
     console.log('working');
 
-    if (getNumberPeople.value === '1') {
+    if (getNumberPeople.value === obj.hotel.minPpl) {
       console.log('People');
       document.getElementById("second").style.opacity = "0.5";
       document.getElementById("third").style.opacity = "0.5";
@@ -80,7 +77,7 @@
     }
 
 
-    if (getNumberPeople.value === '2') {
+    if (getNumberPeople.value === obj.motel.minPpl) {
       console.log('People');
       document.getElementById("first").style.opacity = "1";
       document.getElementById("second").style.opacity = "1";
@@ -88,7 +85,7 @@
       document.getElementById("fourth").style.opacity = "1";
     }
 
-    if (getNumberPeople.value === '3') {
+    if (getNumberPeople.value < obj.hotel.maxPpl) {
       console.log('People');
       document.getElementById("first").style.opacity = "0.5";
       document.getElementById("second").style.opacity = "1";
@@ -96,7 +93,7 @@
       document.getElementById("fourth").style.opacity = "1";
     }
 
-    if (getNumberPeople.value === '4') {
+    if (getNumberPeople.value === obj.house.maxPpl) {
       console.log('People');
       document.getElementById("second").style.opacity = "1";
       document.getElementById("third").style.opacity = "1";
@@ -148,16 +145,16 @@
 
 
 
-    var x = getNumberNights;
-    var y = obj.hotel.price;
+     x = getNumberNights;
+     y = obj.hotel.price;
     var hotelSum = x * y;
     // System.out.println(total); // Print the sum of x + y
     console.log(hotelSum);
 
 
 
-    var x = getNumberNights;
-    var y = obj.hostel.price;
+     x = getNumberNights;
+     y = obj.hostel.price;
     var hostelSum = x * y;
     // System.out.println(total); // Print the sum of x + y
     console.log(hostelSum);
@@ -165,16 +162,15 @@
 
 
 
-    var x = getNumberNights;
-    var y = obj.motel.price;
-    var motelSum = x * y;
+   x = getNumberNights;
+   y = obj.motel.price;
+   motelSum = x * y;
     // System.out.println(total); // Print the sum of x + y
     console.log(motelSum);
 
 
-
-    var x = getNumberNights;
-    var y = obj.house.price;
+    x = getNumberNights;
+     y = obj.house.price;
     var houseSum = x * y;
     // System.out.println(total); // Print the sum of x + y
     console.log(typeof houseSum);
@@ -194,10 +190,10 @@
 
   // Tells user total nights selected
 
-  document.getElementById("hostelpernights").textContent = '$' + obj.hostel.price + ' per night'
-  document.getElementById("motelpernights").textContent = '$' + obj.motel.price + ' per night'
-  document.getElementById("hotelpernights").textContent = '$' + obj.hotel.price + ' per night'
-  document.getElementById("housepernights").textContent = '$' + obj.house.price + ' per night'
+  document.getElementById("hostelpernights").textContent = '$' + obj.hostel.price + ' per night';
+  document.getElementById("motelpernights").textContent = '$' + obj.motel.price + ' per night';
+  document.getElementById("hotelpernights").textContent = '$' + obj.hotel.price + ' per night';
+  document.getElementById("housepernights").textContent = '$' + obj.house.price + ' per night';
 
   // Displays the cost per night
 
@@ -207,9 +203,7 @@
   // onclick ENDS
 
 
-
-
-
+function paper(){
   // Items Magic [Preview-1]
   $('.paper.preview-1 .item').click(function () {
       $('.paper.preview-1 .item').not(this).removeClass('active');
@@ -217,9 +211,13 @@
       if ($('.paper.preview-1 .item').hasClass('active')) {
           $('.paper.preview-1').addClass('item-active');
       } else {
-          $('.paper.preview-1').removeClass('item-active')
-      };
+          $('.paper.preview-1').removeClass('item-active');
+      }
   });
+};
+
+paper();
+
   // Preventing Closing when Click inside counter
   $('.minus,.plus').click(function (a) {
       a.stopPropagation();
@@ -228,7 +226,7 @@
   // Adding Counter [Preview-1]
   $('.paper.preview-1 .plus').click(function () {
       $(this).parent().find('.number').html(function (y, val) {
-          return val * 1 + 1
+          return val * 1 + 1;
       });
   });
 
@@ -236,7 +234,7 @@
       var increased = parseInt($(this).parent().find('.number').text());
       if (isNaN(increased) || increased > 0) {
           $(this).parent().find('.number').html(function (t, val) {
-              return val * 1 - 1
+              return val * 1 - 1;
           });
       } else {
         return false;
@@ -276,14 +274,14 @@
       if ($('.paper.preview-2 .item').hasClass('active')) {
           $('.paper.preview-2').addClass('item-active');
       } else {
-          $('.paper.preview-2').removeClass('item-active')
-      };
+          $('.paper.preview-2').removeClass('item-active');
+      }
   });
 
   // Adding Counter [Preview-2]
   $('.paper.preview-2 .plus').click(function () {
       $(this).parent().find('.number').html(function (p, val) {
-          return val * 1 + 1
+          return val * 1 + 1;
       });
   });
 
@@ -292,7 +290,7 @@
       var increased = parseInt($(this).parent().find('.number').text());
       if (isNaN(increased) || increased > 0) {
           $(this).parent().find('.number').html(function (k, val) {
-              return val * 1 - 1
+              return val * 1 - 1;
           });
       } else {
 

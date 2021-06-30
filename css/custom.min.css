@@ -642,7 +642,7 @@ footer .column-2:nth-child(1) a:nth-child(3), footer .column-2:nth-child(1) a:nt
 .item-icon.drink {background-position:-208px 0}
 
 /** Active **/
-.paper.item-active .item {height:60px;padding:0 20px}
+/* .paper.item-active .item {height:60px;padding:0 20px} */
 .paper.item-active .item.active {height:260px;padding:20px;-webkit-transform: translateZ(0);-moz-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);}
 .item.active .item-icon {
   -webkit-transform:scale(1.5) translateZ(0);
